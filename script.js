@@ -11,14 +11,15 @@ nameInput.keydown(function(e) {
   }	
 })
 
+noteInput.keydown(function(e) {
+  if (e.which == 13) {    
+    addListItem(name + "/notes", noteInput.val())
+  }
+})
+
 function getNotesForName(name) {  
   onNewListItem(name + "/notes", function(note) {
     console.log(note)
   })
 }
 
-noteInput.keydown(function(e) {
-  if (e.which == 13) {    
-    addListItem(name + "/notes", noteInput.val())
-  }
-})
