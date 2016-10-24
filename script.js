@@ -1,13 +1,14 @@
 
-var name;
-var nameInput = $("#name-input")
-var noteInput = $("#note-input")
-var noteList = $("#note-list")
-addListItem("david" + "/notes", "hi there!!!!")
+var nameInput = $("#name-input");
+var noteInput = $("#note-input");
+var noteList = $("#note-list");
+
+addListItem("david" + "/notes", "hi there!!!!");
 
 nameInput.keydown(function(e) {
   if (e.which == 13) {
-    // we have a new name! Now what?
+    var name = nameInput.val();
+    
   }	
 })
 
