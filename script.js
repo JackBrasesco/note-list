@@ -20,8 +20,9 @@ noteInput.keydown(function(e) {
 
 function getNotesForName(name) {  
   onNewListItem(name + "/notes", function(note) {
-    var clean = (note +
-   notes.push(note)
+    notes = [""]
+    var clean = (note + "<br>")
+   notes.push(clean)
    noteList.html(notes)
   })
 }
